@@ -95,3 +95,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+[contenteditable="true"] {
+  width: 90vw;
+  height: 90vh;
+}
+
+.draggable {
+  position: relative;
+  width: fit-content;
+  font-weight: 700;
+}
+
+.draggable::before {
+  cursor: grab;
+  top: 0;
+  left: 0;
+  content: "\a0";
+  width: 0.2em;
+  margin-right: 0.1em;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0em 0.2em;
+  display: inline-block;
+  border-radius: 0.15em;
+  /* border: 0.1em dotted; */
+  background-color: rgba(211, 211, 211, 0.541);
+}
